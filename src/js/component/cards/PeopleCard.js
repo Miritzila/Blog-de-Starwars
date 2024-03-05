@@ -4,7 +4,7 @@ const PeopleCard = ({ gender, birth_year, name }) => {
     <>
         <h5 className="card-title">{name}</h5>
       <img
-        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/39faf444-0f54-48e8-9200-ce675c273feb/df8mqha-fed14fca-7a20-40e7-b4e0-dc0a8933d2f8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM5ZmFmNDQ0LTBmNTQtNDhlOC05MjAwLWNlNjc1YzI3M2ZlYlwvZGY4bXFoYS1mZWQxNGZjYS03YTIwLTQwZTctYjRlMC1kYzBhODkzM2QyZjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5YGBZR8oLI4Te59AbOPQzlQJICi7mUxMzyOiPpUjwhc"
+        src="https://i.pinimg.com/564x/df/7a/a0/df7aa0ae9b66e2ab2d0ee0df21d180f9.jpg"
         className="card-img  img-fluid w-100 h-100 rounded"
         alt="..."
       />

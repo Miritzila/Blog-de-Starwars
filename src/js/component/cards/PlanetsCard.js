@@ -5,7 +5,7 @@ const PlanetsCard = ({ population, climate, name }) => {
     <>
       <h5 className="card-title">{name}</h5>
       <img
-        src="https://cdn.pixabay.com/photo/2016/11/18/22/58/stars-1837306_1280.jpg"
+        src="https://i.pinimg.com/564x/46/6f/d5/466fd566e169076ce288fb9397c398ff.jpg"
         className="card-img img-fluid w-150 h-150 rounded"
         alt="..."
       />

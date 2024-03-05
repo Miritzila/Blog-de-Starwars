@@ -5,7 +5,7 @@ const StarshipsCard = ({ vehicle_class, cargo_capacity }) => {
     <>
       <h5 className="card-title">{name}</h5>
       <img
-        src="https://img.freepik.com/free-photo/view-futuristic-looking-spaceship_23-2150675497.jpg?size=626&ext=jpg"
+        src="https://i.pinimg.com/564x/a2/6d/41/a26d41e31085a261a1b2906b09e11c8d.jpg"
         className="card-img img-fluid w-150 h-150 rounded"
         alt="..."
       />

@@ -22,38 +22,39 @@ export const Navbar = () => {
         </span>
       </Link>
       <div className="ms-auto">
-        <div className="dropdown">
-          <button
-            className="btn btn-dark dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            data-bs-auto-close="outside"
-            aria-expanded="false"
-          >
-           <p>Favorites {favorites?.length ? favorites.length : 0}</p> 
-          </button>
-          <ul className="dropdown-menu">
-            {favorites?.length ? (
-              favorites.map((element) => {
-                return (
-                  <li key={element.uid}>
-                    <div className="d-flex justify-content-between">
-                      {element?.name}
-                      <button
-                        type="button"
-                        className="btn-close"
-                        onClick={() => removeFromFavorites(element.uid)}
-                      ></button>
-                    </div>
-                  </li>
-                );
-              })
-            ) : (
-              <li className="FavsIndicator">  No favorites!</li>
-            )}
-          </ul>
-        </div>
-      </div>
+  <div className="dropdown">
+    <button
+      className="btn btn-dark dropdown-toggle d-flex align-items-center"
+      type="button"
+      data-bs-toggle="dropdown"
+      data-bs-auto-close="outside"
+      aria-expanded="false"
+    >
+      <span>Favorites {favorites?.length ? favorites.length : 0}</span>
+      <i className="bi bi-caret-down-fill ms-2"></i>
+    </button>
+    <ul className="dropdown-menu">
+      {favorites?.length ? (
+        favorites.map((element) => {
+          return (
+            <li key={element.uid}>
+              <div className="d-flex justify-content-between">
+                {element?.name}
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={() => removeFromFavorites(element.uid)}
+                ></button>
+              </div>
+            </li>
+          );
+        })
+      ) : (
+        <li className="FavsIndicator">No favorites!</li>
+      )}
+    </ul>
+  </div>
+</div>
     </nav>
   );
 };

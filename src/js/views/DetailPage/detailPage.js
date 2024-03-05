@@ -41,7 +41,9 @@ export const DetailPage = () => {
         {targetResource ? (
           <div className="divImage"> 
             <h2 className="p-2">{targetResource.name}</h2>
-            {resourceType === "people" && <PeopleDetail {...targetResource} />}
+            {resourceType === "people" && (
+            <PeopleDetail {...targetResource} />
+            )}
             {resourceType === "starships" && (
               <StarshipsDetail {...targetResource} />
             )}

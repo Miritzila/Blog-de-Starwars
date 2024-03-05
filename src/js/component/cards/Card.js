@@ -24,10 +24,10 @@ const Card = ({ uid, targetResource, ...item }) => {
           {targetResource === "planets" && <PlanetsCard {...item} />}
           {targetResource === "vehicles" && <StarshipsCard {...item} />}
         </div>
-        <div className="d-flex justify-content-between">
-          <button className="btn btn-dark"><Link to={`/${uid}`} className="btn btn-dark">
+        <div className="d-flex justify-content-center align-items-center">
+          <Link to={`/${uid}`} className="btn btn-dark">
             Learn More about {item.name}
-          </Link></button>
+          </Link>
           <div className="d-flex justify-content-center align-items-center">
             <div
               className={`btn ms-auto ${isFavorite ? "favorite-button-active" : "favorite-button-inactive"}`}

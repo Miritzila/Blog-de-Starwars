@@ -6,6 +6,6 @@
   color: red;
 }
 
-.favorite-button-inactive {
+.fa-heart:hover {
   color: red;
 }
