@@ -14,7 +14,7 @@ const StarshipsCard = ({ vehicle_class, cargo_capacity }) => {
         {vehicle_class}
       </p>
       <p>
-        <strong>Cargo capacity:</strong>
+        <strong>Cargo capacity: </strong>
         {cargo_capacity}
       </p>
     </>

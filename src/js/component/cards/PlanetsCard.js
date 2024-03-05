@@ -15,7 +15,7 @@ const PlanetsCard = ({ population, climate, name }) => {
         {population}
       </p>
       <p>
-        <strong>Climate:</strong>
+        <strong>Climate: </strong>
         {climate}
       </p>
     </>

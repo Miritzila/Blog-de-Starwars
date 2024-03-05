@@ -13,7 +13,7 @@ const PeopleCard = ({ gender, birth_year, name }) => {
         {gender}
       </p>
       <p>
-        <strong>Birth year:</strong>
+        <strong>Birth year: </strong>
         {birth_year}
       </p>
     </>

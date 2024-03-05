@@ -9,7 +9,6 @@ export const DetailPage = () => {
   const params = useParams();
   const { store } = useAppContext();
   const { people, planets, vehicles, isLoading } = store;
-  
 
   if (isLoading) {
     return (
@@ -23,7 +22,10 @@ export const DetailPage = () => {
 
   const allResources = [...people, ...planets, ...vehicles];
   const targetResource = allResources.find((items) => items.uid == params.uid);
-  console.log("target", targetResource);
+
+  if (!targetResource) {
+    return <div>Error: Recurso no encontrado</div>;
+  }
 
   let resourceType;
   if (people.find((person) => person.uid == params.uid)) {
@@ -33,35 +35,21 @@ export const DetailPage = () => {
   } else {
     resourceType = "starships";
   }
-  console.log("resourcetype", resourceType);
 
   return (
-    <div className="container">
-      <div className="card">
-        {targetResource ? (
-          <div className="divImage"> 
-            <h2 className="p-2">{targetResource.name}</h2>
-            {resourceType === "people" && (
-            <PeopleDetail {...targetResource} />
-            )}
-            {resourceType === "starships" && (
-              <StarshipsDetail {...targetResource} />
-            )}
-            {resourceType === "planets" && (
-              <PlanetsDetail {...targetResource} />
-            )}
-
-            <br />
-            <div className="card-body">
-              <Link to="/">
-                <button className="generalButton ml-auto">Back home</button>
-              </Link>
-            </div>
-          </div>
-        ) : (
-          <p>Loading...</p>
-        )}
-      </div>
+    <div>
+      <h2 className="p-2 text-center">{targetResource.name}</h2>
+      <br></br>
+      {resourceType === "people" && (
+        <PeopleDetail {...targetResource} />
+      )}
+      {resourceType === "starships" && (
+        <StarshipsDetail {...targetResource} />
+      )}
+      {resourceType === "planets" && (
+        <PlanetsDetail {...targetResource} />
+      )}
     </div>
+    
   );
 };
