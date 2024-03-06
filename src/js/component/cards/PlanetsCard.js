@@ -1,6 +1,6 @@
 import React from "react";
 
-const PlanetsCard = ({ population, climate, name }) => {
+const PlanetsCard = ({ climate, terrain, name }) => {
   return (
     <>
       <h5 className="card-title">{name}</h5>
@@ -11,8 +11,8 @@ const PlanetsCard = ({ population, climate, name }) => {
       />
 
       <p>
-        <strong>Population: </strong>
-        {population}
+        <strong>Terrain: </strong>
+        {terrain}
       </p>
       <p>
         <strong>Climate: </strong>

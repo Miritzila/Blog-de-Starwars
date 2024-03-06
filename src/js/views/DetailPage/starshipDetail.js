@@ -8,7 +8,7 @@ const StarshipsDetail = ({ ...targetResource }) => {
       <div className="row">
         <div className="col">
           <img
-            src="https://i.pinimg.com/564x/40/dc/bc/40dcbc34b1dffa0192927cef5a7d16e6.jpg"
+            src="https://i.pinimg.com/564x/74/0d/8e/740d8ef62c0a41565f32eecdca79123a.jpg"
             className="cardDetailImg card-img-top object-fit-cover"
             alt="..."
           />
@@ -21,20 +21,20 @@ const StarshipsDetail = ({ ...targetResource }) => {
           <div class="container text-center">
             <div class="row">
               <div class="col"><ul className="list-group list-group-flush">
-                <li className="list-group-item fw-bold">Birth Year</li>
-                <li className="list-group-item">{targetResource.name}</li>
+                <li className="list-group-item fw-bold">Class</li>
+                <li className="list-group-item">{targetResource.vehicle_class}</li>
               </ul></div>
               <div class="col"><ul className="list-group list-group-flush">
-                <li className="list-group-item fw-bold">Birth Year</li>
-                <li className="list-group-item">{targetResource.name}</li>
+                <li className="list-group-item fw-bold">Manufacturer</li>
+                <li className="list-group-item">{targetResource.manufacturer}</li>
               </ul></div>
               <div class="col"><ul className="list-group list-group-flush">
-                <li className="list-group-item fw-bold">Birth Year</li>
-                <li className="list-group-item">{targetResource.name}</li>
+                <li className="list-group-item fw-bold">Length</li>
+                <li className="list-group-item">{targetResource.length}</li>
               </ul></div>
               <div class="col"><ul className="list-group list-group-flush">
-                <li className="list-group-item fw-bold">Birth Year</li>
-                <li className="list-group-item">{targetResource.name}</li>
+                <li className="list-group-item fw-bold">Crew</li>
+                <li className="list-group-item">{targetResource.crew}</li>
               </ul></div>
             </div>
           </div>

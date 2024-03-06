@@ -1,6 +1,6 @@
 import React from "react";
 
-const StarshipsCard = ({ vehicle_class, cargo_capacity }) => {
+const StarshipsCard = ({ vehicle_class, manufacturer, name }) => {
   return (
     <>
       <h5 className="card-title">{name}</h5>
@@ -14,8 +14,8 @@ const StarshipsCard = ({ vehicle_class, cargo_capacity }) => {
         {vehicle_class}
       </p>
       <p>
-        <strong>Cargo capacity: </strong>
-        {cargo_capacity}
+        <strong>Manufacturer: </strong>
+        {manufacturer}
       </p>
     </>
   );

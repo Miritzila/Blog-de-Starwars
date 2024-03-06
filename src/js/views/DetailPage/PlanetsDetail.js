@@ -21,20 +21,20 @@ const PlanetsDetail = ({ ...targetResource }) => {
           <div class="container text-center">
             <div class="row">
               <div class="col"><ul className="list-group list-group-flush">
-                <li className="list-group-item fw-bold">Birth Year</li>
-                <li className="list-group-item">{targetResource.name}</li>
+                <li className="list-group-item fw-bold">Diameter</li>
+                <li className="list-group-item">{targetResource.diameter}</li>
               </ul></div>
               <div class="col"><ul className="list-group list-group-flush">
-                <li className="list-group-item fw-bold">Birth Year</li>
-                <li className="list-group-item">{targetResource.name}</li>
+                <li className="list-group-item fw-bold">Population</li>
+                <li className="list-group-item">{targetResource.population}</li>
               </ul></div>
               <div class="col"><ul className="list-group list-group-flush">
-                <li className="list-group-item fw-bold">Birth Year</li>
-                <li className="list-group-item">{targetResource.name}</li>
+                <li className="list-group-item fw-bold">Climate</li>
+                <li className="list-group-item">{targetResource.climate}</li>
               </ul></div>
               <div class="col"><ul className="list-group list-group-flush">
-                <li className="list-group-item fw-bold">Birth Year</li>
-                <li className="list-group-item">{targetResource.name}</li>
+                <li className="list-group-item fw-bold">Terrain</li>
+                <li className="list-group-item">{targetResource.terrain}</li>
               </ul></div>
             </div>
           </div>

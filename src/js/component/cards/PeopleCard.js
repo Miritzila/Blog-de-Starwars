@@ -1,5 +1,5 @@
 import React from "react";
-const PeopleCard = ({ gender, birth_year, name }) => {
+const PeopleCard = ({ birth_year, name, eye_color }) => {
   return (
     <>
         <h5 className="card-title">{name}</h5>
@@ -9,12 +9,12 @@ const PeopleCard = ({ gender, birth_year, name }) => {
         alt="..."
       />
       <p>
-        <strong>Gender: </strong>
-        {gender}
-      </p>
-      <p>
         <strong>Birth year: </strong>
         {birth_year}
+      </p>
+      <p>
+        <strong>Eye color: </strong>
+        {eye_color}
       </p>
     </>
   );

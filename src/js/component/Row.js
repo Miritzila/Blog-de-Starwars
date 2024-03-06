@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./cards/Card";
 import "../../styles/home.css";
-import useResources from "../../hooks/useResources";
 import useAppContext from "../../context/AppContext";
 
 const Row = ({ title, targetResource }) => {
